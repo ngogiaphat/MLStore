@@ -24,7 +24,8 @@ article .image img {
     object-fit: cover;
 }
 
-article .text {
+article .text 
+{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -168,4 +169,3 @@ article .text p {
     
 
 }
-
