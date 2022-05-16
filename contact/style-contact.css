@@ -80,8 +80,8 @@
     }
     
 }
-
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
     .form {
         flex-direction: column;
     }
@@ -90,7 +90,7 @@
         width: 100%;
     }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+{
     /* section event  */
 }
