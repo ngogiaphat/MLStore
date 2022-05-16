@@ -51,35 +51,31 @@
     width: 100%;
     
 }
-
-.form .form-contact .btn-submit .btn {
+.form .form-contact .btn-submit .btn 
+{
     display: flex;
     justify-content: end;
 }
-
-
-
 .form .form-contact .info-user input:focus,
-.form .form-contact textarea:focus {
+.form .form-contact textarea:focus 
+{
     border: 0.1rem solid var(--main-color);
     box-shadow: 0 0 0.4rem var(--main-color);
 }
-
-.map-img {
+.map-img 
+{
     width: 50%;
     overflow: hidden;
 }
-
-.map-img img {
+.map-img img 
+{
     object-fit: cover;
     width: 100%;
 }
-
-
-
-
-@media (max-width: 960px) {
-    .form .form-contact .info-user {
+@media (max-width: 960px) 
+{
+    .form .form-contact .info-user 
+    {
         grid-template-columns: auto;
     }
     
