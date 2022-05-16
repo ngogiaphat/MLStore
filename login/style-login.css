@@ -1,10 +1,11 @@
-.logo {
+.logo 
+{
     transform: scale(1.5);
     display: flex;
     justify-content: center;
 }
-
-.frame {
+.frame 
+{
     width: 100%;
     height: 100vh;
     background: var(--linear-color);
@@ -12,8 +13,8 @@
     justify-content: center;
     align-items: center;
 }
-
-.wrapper {
+.wrapper 
+{
     width: 100%;
     height: 46rem;
     max-width: 35rem;
@@ -25,38 +26,38 @@
     flex-direction: column;
     overflow: hidden;
 }
-
-.wrapper .toggle-btn {
+.wrapper .toggle-btn 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2rem 0;
     cursor: pointer;
 }
-
-.wrapper .toggle-btn div{
+.wrapper .toggle-btn div
+{
     width: 50%;
     font-size: 1.8rem;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.2rem;
 }
-
-.wrapper .toggle-btn div.active {
+.wrapper .toggle-btn div.active 
+{
     border-bottom: 0.2rem solid var(--main-color);
 }
-
-.wrapper .toggle-btn div:hover {
+.wrapper .toggle-btn div:hover 
+{
     text-shadow: 0 0 0.4rem var(--main-color);
 }
-
-.group-input {
+.group-input 
+{
     width: 100%;
     position: relative;
     margin: 2rem 0 2rem 0;
 }
-
-.group-input label {
+.group-input label 
+{
     position: absolute;
     top: -1rem;
     left: 1rem;
@@ -64,8 +65,8 @@
     font-size: 1.2rem;
     padding: 0 0.5rem;
 }
-
-.group-input input {
+.group-input input 
+{
     width: 100%;
     outline: none;
     background: transparent;
@@ -73,26 +74,26 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
-
-.group-input.error input {
+.group-input.error input 
+{
     border: 0.1rem solid red;
     box-shadow: 0 0 0.4rem rgba(255, 0, 0, 0.1);
 }
-
-.group-input .message {
+.group-input .message 
+{
     color: red;
     margin: 0 1rem;
 }
-
-#check-box {
+#check-box 
+{
     outline: #0396ff;
 }
-
-.remember {
+.remember 
+{
     font-size: 1.2rem;
 }
-
-.submit-btn {
+.submit-btn 
+{
     width: 20rem;
     border: none;
     background: var(--linear-color);
@@ -104,28 +105,29 @@
     letter-spacing: 0.2rem;
     cursor: pointer;
 }   
-.submit-btn a {
+.submit-btn a 
+{
     color: var(--text-900);
 }
-
-.submit-btn:hover {
+.submit-btn:hover 
+{
     transform: scale(1.1);
 }
-
-.indefinite {
+.indefinite 
+{
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
-.icons {
+.icons 
+{
     margin-top: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
-.icons i {
+.icons i 
+{
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -138,15 +140,14 @@
     margin: 0 1rem;
     cursor: pointer;
 }
-
-#login {
+#login 
+{
     position: relative;
     left: 0;
     /* left: -40rem; */
-
 }
-
-#sign-up {
+#sign-up 
+{
     position: relative;
     top: -26rem;
     left: 40rem;
