@@ -77,7 +77,6 @@ window.nextSlide = function(e)
     (count === lengthSlide -1) ? count = 0 : count ++;
     mainSlide.style.left = `-${widthItem * count}px`;
 }
-
 function productHandlerHot(product) 
 {
     return `
