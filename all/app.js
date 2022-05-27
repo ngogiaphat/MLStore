@@ -3,35 +3,35 @@ import products from './data.json' assert {type: 'json'};
 const header = document.createElement("header");
 header.innerHTML = `
 <div class="header-top">
-        <div class="logo">
-            <h2>ML</h2>
-            <p>Store</p>
-        </div>
-        <div class="search-box">
-            <input id="search-box" type="text" placeholder="Bạn muốn tìm">
-            <label for="search-box"><i class="fas fa-search"></i></label>
-            <div class="search-block">
-                <p>Bạn muốn tìm</p>
-            </div>
+    <div class="logo">
+        <h2>ML</h2>
+        <p>Store</p>
+    </div>
+    <div class="search-box">
+        <input id="search-box" type="text" placeholder="Bạn muốn tìm">
+        <label for="search-box"><i class="fas fa-search"></i></label>
+        <div class="search-block">
+            <p>Bạn muốn tìm</p>
         </div>
     </div>
-    <div class="header-bottom">
-        <div class="menu">
-            <div class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></div>
-            <div class="menu-section">
-                <a href="../index.html">Trang chủ</a>
-                <a href="../shop/shop.html">Cửa hàng</a>
-                <a href="../introduce/introduce.html">Giới thiệu</a>
-                <a href="../contact/contact.html">Liên hệ</a>
-                <a href="../sitemap/sitemap.html">Hướng dẫn</a>
-            </div>
-        </div>
-        <div class="icons">
-            <a href="../notification/notification.html"><i class="fas fa-bell"></i></a>
-            <a href="../cart/cart.html"><i class="fas fa-shopping-cart" id="cart"><div class="count">1</div></i></a>
-            <a href="../login/login.html" class="image-user"><img src="../image/avatar.jfif" alt=""></a>
+</div>
+<div class="header-bottom">
+    <div class="menu">
+        <div class="btn-menu" id="btn-menu"><i class="fas fa-bars"></i></div>
+        <div class="menu-section">
+            <a href="../index.html">Trang chủ</a>
+            <a href="../shop/shop.html">Cửa hàng</a>
+            <a href="../introduce/introduce.html">Giới thiệu</a>
+            <a href="../contact/contact.html">Liên hệ</a>
+            <a href="../sitemap/sitemap.html">Hướng dẫn</a>
         </div>
     </div>
+    <div class="icons">
+        <a href="../notification/notification.html"><i class="fas fa-bell"></i></a>
+        <a href="../cart/cart.html"><i class="fas fa-shopping-cart" id="cart"><div class="count">1</div></i></a>
+        <a href="../login/login.html" class="image-user"><img src="../image/avatar.jfif" alt=""></a>
+    </div>
+</div>
 `
 document.body.appendChild(header)
 // nút section cho menu

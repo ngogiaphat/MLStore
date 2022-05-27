@@ -1,10 +1,12 @@
 /* section event */
-.events {
+.events 
+{
     margin-top: 9rem;
     display: flex;
     justify-content: center;
 }
-.events .frame{
+.events .frame
+{
     width: 100%;
     max-width: 114rem;
     position: relative;
@@ -14,8 +16,10 @@
     cursor: pointer;
 }
 
+/*prev-next*/
 .prev-btn,
-.next-btn {
+.next-btn 
+{
     position: absolute;
     width: 5rem;
     height: 100%;
@@ -29,43 +33,46 @@
     z-index: 10;
     cursor: pointer;
 }
-
 .prev-btn:hover,
-.next-btn:hover {
+.next-btn:hover 
+{
     opacity: 0.8;
 }
-
-.prev-btn {
+.prev-btn 
+{
     left: 0;
 }
-.next-btn {
+.next-btn 
+{
     right: 0;
 }
 
-.slide-group {
+/*slide*/
+.slide-group 
+{
     display: flex;
     position: relative;
     /* left: -1024px; */
 }
-
-.slide-group .slide-item {
+.slide-group .slide-item 
+{
     flex: 1 0 100%;
     width: 100%;
 }
-
-.slide-group .slide-item img {
+.slide-group .slide-item img 
+{
     width: 100%;
     object-fit: cover;
 }
 
-
 /* section */
-section:not(.events) {
+section:not(.events) 
+{
     padding: 2rem 15rem 4rem;
     background: var(--background-50);
 }
-
-.title {
+.title 
+{
     font-size: 2.5rem;
     color: var(--main-color);
     text-shadow: 0 0 0.4rem rgba(0,0,0,0.1);
@@ -73,7 +80,9 @@ section:not(.events) {
     text-indent: -5rem;
 }
 
-.wrapper {
+/* wrapper */
+.wrapper 
+{
     width: 100%;
     display: flex;
     background: var(--background-100);
@@ -82,9 +91,8 @@ section:not(.events) {
     border-top: 0.1rem solid #eee;
     box-shadow: 0 0 1rem rgba(0,0,0,0.1);
 }
-
-
-.wrapper .product {
+.wrapper .product 
+{
     cursor: pointer;
     flex: 1 0 20rem;
     width: 20rem;
@@ -95,7 +103,8 @@ section:not(.events) {
     box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
     position: relative;
 }
-.wrapper .product.hot::after {
+.wrapper .product.hot::after 
+{
     position: absolute;
     top: 1.5rem;
     left: 0;
@@ -108,7 +117,8 @@ section:not(.events) {
     font-size: 1.4rem;
     background: rgb(194, 10, 10);
 }
-.wrapper .product.sale::after {
+.wrapper .product.sale::after 
+{
     position: absolute;
     top: 1.5rem;
     left: 0;
@@ -121,7 +131,8 @@ section:not(.events) {
     font-size: 1.4rem;
     background: rgb(255, 196, 0);
 }
-.wrapper .product.new::after {
+.wrapper .product.new::after 
+{
     position: absolute;
     top: 1.5rem;
     left: 0;
@@ -134,16 +145,16 @@ section:not(.events) {
     font-size: 1.4rem;
     background: var(--main-color);
 }
-
-.wrapper .product .image {
+.wrapper .product .image 
+{
     width: 100%;
     height: 22.5rem;
     overflow: hidden;
     border-radius: 0.5rem;
     position: relative;
 }
-
-.wrapper .product .image::after {
+.wrapper .product .image::after 
+{
     position: absolute;
     content: "Xem thêm";
     bottom: 0;
@@ -156,97 +167,82 @@ section:not(.events) {
     text-align: center;
     display: none;
 }
-
-.wrapper .product:hover .image::after {
+.wrapper .product:hover .image::after 
+{
     display: block;
 }
-
-.wrapper .product .image img {
+.wrapper .product .image img 
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.wrapper .product .info-product .name {
+.wrapper .product .info-product .name 
+{
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: -0rem;
     color: var(--text-900);
 }
-
-.wrapper .product .info-product .price {
+.wrapper .product .info-product .price 
+{
     font-size: 1.5rem;
     color: red;
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
-
-.wrapper .product .info-product .price {
+.wrapper .product .info-product .price 
+{
     margin-top: 1rem;
     display: flex;
     justify-content: start;
     align-items: end;
 }
-
-.wrapper .product .info-product .price span {
+.wrapper .product .info-product .price span 
+{
     color: var(--text-900);
     font-size: 1.2rem;
 }
-
-.wrapper .product:hover {
+.wrapper .product:hover 
+{
     box-shadow: 0 0 1rem rgba(0,0,0,0.2);
 }
-
-.wrapper .product .left {
+.wrapper .product .left 
+{
     left: 1.5rem;
 }
-
-.wrapper .product .right {
+.wrapper .product .right 
+{
     right: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 960px) {
-    section:not(.events) {
+/*media*/
+@media (max-width: 960px) 
+{
+    section:not(.events) 
+    {
         padding: 2rem 10rem 4rem;
     }
 }
-
-@media (max-width: 768px) {
-    section:not(.events) {
+@media (max-width: 768px) 
+{
+    section:not(.events) 
+    {
         padding: 2rem 5rem 4rem;
     }
-    .title {
+    .title 
+    {
         text-indent: -3rem;
     }
 }
-
-@media (max-width: 600px) {
-    section:not(.events) {
+@media (max-width: 600px) 
+{
+    section:not(.events) 
+    {
         padding: 2rem 2rem 4rem;
     }
-    .title {
+    .title 
+    {
         text-indent: 0rem;
     }
 }
