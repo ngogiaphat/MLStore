@@ -1,5 +1,5 @@
 import products from './data.json' assert {type: 'json'};
-// thêm header vào trang
+//thêm header vào trang
 const header = document.createElement("header");
 header.innerHTML = `
 <div class="header-top">
@@ -34,14 +34,16 @@ header.innerHTML = `
 </div>
 `
 document.body.appendChild(header)
-// nút section cho menu
+
+//nút section cho menu
 const btnMenu = document.getElementById("btn-menu");
 btnMenu.addEventListener("click", () => {
     btnMenu.parentElement.querySelector(".menu-section").classList.toggle("active");
     btnMenu.querySelector(".fas").classList.toggle("fa-bars");
     btnMenu.querySelector(".fas").classList.toggle("fa-times");
 })
-// search box
+
+//search box
 const searchBox = document.getElementById("search-box");
 function productHandlerSearch(product) 
 {
@@ -49,11 +51,13 @@ function productHandlerSearch(product)
     <a href="../shop/product.html" class="item-block" id=${product.id} onclick="transmittion(this)"><img src=${product.image} alt=""><div class="name-product">${product.title}</div></a>
     `
 };
-// truyền thông tin sản phẩm tìm kiếm
+
+//truyền thông tin sản phẩm tìm kiếm
 window.transmittion = (e) => {
     localStorage.setItem('item', e.id);
 }
-// đóng mở khung search
+
+//đóng mở khung search
 searchBox.onfocus = () => {
     searchBox.parentElement.classList.add("active");
 };
@@ -67,14 +71,16 @@ searchBox.onkeyup = () => {
     let searchProducts = searchBox.parentElement.querySelector(".search-block");
     searchProducts.innerHTML = listProductsSearch.join('');
 }
-// giỏ hàng
+
+//giỏ hàng
 window.countItem = () => {
     const cart = document.getElementById("cart");
     let count = JSON.parse(localStorage.getItem("items")).length;
     cart.querySelector(".count").innerHTML = `${count}`
 };
 countItem();
-// thêm footer vào trang
+
+//thêm footer vào trang
 const footer = document.createElement("footer")
 footer.innerHTML = `
 <div class="icons">

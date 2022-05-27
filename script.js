@@ -10,7 +10,8 @@ else
     localStorage.setItem('items','[]');
     items = [];
 }
-// navbar
+
+//navbar
 const btnMenu = document.getElementById("btn-menu");
 btnMenu.addEventListener("click", () => {
     btnMenu.parentElement.querySelector(".menu-section").classList.toggle("active");
@@ -18,7 +19,7 @@ btnMenu.addEventListener("click", () => {
     btnMenu.querySelector(".fas").classList.toggle("fa-times");
 })
 
-// search box
+//search box
 const searchBox = document.getElementById("search-box");
 function productHandlerSearch(product) 
 {
@@ -52,7 +53,7 @@ searchBox.onkeyup = () => {
     searchProducts.innerHTML = listProductsSearch.join('');
 }
 
-// đếm số phần tử của giỏ hàng
+//đếm số phần tử của giỏ hàng
 window.countItem = () => {
     const cart = document.getElementById("cart");
     let count = JSON.parse(localStorage.getItem("items")).length;
@@ -60,7 +61,7 @@ window.countItem = () => {
 };
 countItem();
 
-// events sections
+//events sections
 const slideItems = document.querySelectorAll(".slide-item"),
 mainSlide = document.querySelector(".slide-group"),
 lengthSlide = slideItems.length,

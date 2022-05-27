@@ -1,4 +1,4 @@
-// chuyển đổi trong login và signup
+//chuyển đổi trong login và signup
 let x = document.getElementById("login"),
 y = document.getElementById("sign-up");
 const toggleBtn = document.querySelector(".toggle-btn")
@@ -17,11 +17,12 @@ function signUp()
     toggleBtn.querySelector(".login").classList.remove("active");
     toggleBtn.querySelector(".sign-up").classList.add("active");
 }
-// Validator
+
+//Validator
 function Validator(options) 
 {
     let selectorRules = {};
-    // hàm xử lí xem có input có hợp lệ hay không 
+    //hàm xử lí xem có input có hợp lệ hay không 
     function validate(inputElement, rule) 
     {
         let errorMessage;
@@ -45,11 +46,12 @@ function Validator(options)
         }
         return errorMessage;
     }
-    // hàm xử lí từng rule xem có hợp lệ hay không
+
+    //hàm xử lí từng rule xem có hợp lệ hay không
     let formElement = document.querySelector(options.form);
     if(formElement) 
     {
-        // nhấp nút submit
+        //nhấp nút submit
         let btnSubmit = formElement.querySelector(".submit-btn");
         btnSubmit.onclick = (e) => {
             let isValid = true;
@@ -91,7 +93,8 @@ function Validator(options)
         });
     }
 }
-// kiểm tra có bỏ trống hay không
+
+//kiểm tra có bỏ trống hay không
 Validator.isRequired = (selector) => {
     return {
         selector: selector,
@@ -101,7 +104,8 @@ Validator.isRequired = (selector) => {
         },
     }
 }
-// kiểm tra có phải email
+
+//kiểm tra có phải email
 Validator.isEmail = (selector) => {
     return {
         selector: selector,
@@ -112,6 +116,7 @@ Validator.isEmail = (selector) => {
         },
     }
 }
+
 //Kiểm tra có dủ độ dài hay không
 Validator.minLength = (selector, min) => {
     return {
@@ -122,7 +127,8 @@ Validator.minLength = (selector, min) => {
         },
     }
 }
-// Kiểm tra giá trị 
+
+//Kiểm tra giá trị 
 Validator.isConfirmed = (selector, getConfirmValue, message) => {
     return {
         selector: selector,
@@ -132,3 +138,4 @@ Validator.isConfirmed = (selector, getConfirmValue, message) => {
         }
     }
 }
+//kìa gió gió cứ bay về trời !

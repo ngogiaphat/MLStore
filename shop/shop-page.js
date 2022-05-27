@@ -5,13 +5,15 @@ let page = 1;
 const prevBtn = document.getElementById("prev"),
 nextBtn = document.getElementById("next"),
 numbers = document.querySelectorAll(".number");
-// tạo trang sau
+
+//tạo trang sau
 prevBtn.addEventListener(("click"), () => {
     (page == 1) ? page = maxPage : page--;
     shopProducts.innerHTML = creatListProducts();
 
 })
-// tạo trang trước
+
+//tạo trang trước
 nextBtn.addEventListener(("click"), () => {
     (page == maxPage) ? page = 1 : page++;
     shopProducts.innerHTML = creatListProducts();
@@ -22,7 +24,7 @@ window.handlerClick = (e) => {
     shopProducts.innerHTML = creatListProducts();
 };
 
-// tạo trang theo filter
+//tạo trang theo filter
 const sections = document.querySelectorAll(".section");
 window.handlerClickFilter = (e,id) => {
     page = (id % maxPage) + 1;
@@ -38,7 +40,8 @@ window.handlerClickFilter = (e,id) => {
     })
     shopProducts.innerHTML = creatListProducts();
 }
-// tạo danh sách sản phảm
+
+//tạo danh sách sản phảm
 function productHandler(product) 
 {
     return `
@@ -57,7 +60,7 @@ let shopProducts = document.querySelector(".list-product");
 // 
 function creatListProducts() 
 {
-    // tạo pagination
+    //tạo pagination
     pagination.innerHTML = ''
     for(let i = 0; i < maxPage; i++) 
     {
@@ -74,7 +77,8 @@ function creatListProducts()
     return listProducts.join('')
 }
 shopProducts.innerHTML = creatListProducts();
-// truyền item vào giỏ hàng
+
+//truyền item vào giỏ hàng
 window.transmittion = (e) => {
     localStorage.setItem('item', e.id);
 }

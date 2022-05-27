@@ -1,4 +1,4 @@
-// thêm sản phẩm vào giỏ hàng
+//thêm sản phẩm vào giỏ hàng
 let items = JSON.parse(localStorage.getItem('items'));
 handlerItem = (item) => {
     return `
@@ -17,12 +17,13 @@ handlerItem = (item) => {
 }
 let bodyCart = document.querySelector(".cart-body");
 bodyCart.innerHTML = items.map((item) => handlerItem(item)).join('');
-// xóa sản phẩm
-// xử lý tính tiền giỏ hàng
+//xóa sản phẩm
+
+//xử lý tính tiền giỏ hàng
 let products = document.querySelectorAll(".product");
 let totalPill = document.getElementById("total");
 totalPill.innerHTML = 0;
-// hàm tính tiền mỗi khi click
+//hàm tính tiền mỗi khi click
 window.cals = () => {
     totalPill.innerHTML = 0;
     products.forEach((product) => {
@@ -36,7 +37,8 @@ window.cals = () => {
         }
     });
 }
-// tính tiền lúc đầu
+
+//tính tiền lúc đầu
 products.forEach((product) => {
     let price = product.querySelector(".price").innerHTML,
     quantity = product.querySelector(".quantity").innerHTML
@@ -47,7 +49,8 @@ products.forEach((product) => {
         totalPill.innerHTML = parseInt(totalPill.innerHTML) + parseInt(total.innerHTML)
     }
 });
-// xóa sản phẩm
+
+//xóa sản phẩm
 window.removeItem = (e) => {
     let product = e.parentElement.id;
     items = items.filter((item) => item.id != product)
@@ -55,7 +58,8 @@ window.removeItem = (e) => {
     bodyCart.innerHTML = items.map((item) => handlerItem(item)).join('');
     countItem();
 }
-// Thanh toán
+
+//thanh toán
 const abateBtn = document.getElementById("abate");
 const total = document.getElementById("total")
 abateBtn.addEventListener("click", () => {
