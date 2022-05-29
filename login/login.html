@@ -23,7 +23,7 @@
                     <div class="login active" onclick="login()">Đăng nhập</div>
                     <div class="sign-up" onclick="signUp()">Đăng ký</div>
                 </div>
-                <from id="login"> 
+                <form id="login">
                     <div class="group-input">
                         <label for="email-login">Tài khoản</label>
                         <input id="email-login" type="text" placeholder="vd: minhluan@gmail.com">
@@ -45,8 +45,8 @@
                         <i class="fab fa-google"></i>
                         <i class="fab fa-apple"></i>
                     </div>
-                </from>
-                <from id="sign-up">
+                </form>
+                <form id="sig-up">
                     <div class="group-input">
                         <label for="email-sign-up">Tài khoản</label>
                         <input id="email-sign-up" type="text" placeholder="vd: minhluan@gmail.com">
@@ -68,7 +68,7 @@
                     </div>
                     <!-- <a href="../home/index.html" class="submit-btn">Đăng ký</a> -->
                     <button class="submit-btn"><a href="../index.html">Đăng kí</a></button>
-                </from>
+                </form>
             </div>
         </div>
         <!-- script file -->
@@ -81,7 +81,8 @@
                     Validator.isRequired('#email-login'),
                     Validator.isEmail('#email-login'),
                     Validator.minLength('#pass-login',6),
-                    Validator.isConfirmed('#pass-login', function() {
+                    Validator.isConfirmed('#pass-login', function() 
+                    {
                         return '123456';
                     }, 'Mật khẩu '),
                 ]
@@ -95,7 +96,8 @@
                     Validator.isRequired('#pass-sign-up'),
                     Validator.minLength('#pass-sign-up',6),
                     Validator.isRequired('#enter-pass'),
-                    Validator.isConfirmed('#enter-pass', function() {
+                    Validator.isConfirmed('#enter-pass', function() 
+                    {
                         return document.getElementById('pass-sign-up').value;
                     }, 'Mật khẩu nhập lại'),
                 ]
